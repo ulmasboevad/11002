@@ -1,0 +1,31 @@
+<%- include("_header") -%>
+
+<h1>List of students (<%= model.length %>)</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Comments</th>
+        <th class="d-print-none">
+          <a class="btn-outline-success" href="/create">Add</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (const student of model) { %>
+        <tr>
+          <td><%= student.Name %></td>
+          <td><%= student.Course %></td>
+          <td><%= student.Comments %></td>
+          <td class="d-print-none">
+            <b><a class="btn-outline-warning" href="/edit/<%= student.Student_ID %>">Edit</a></b>
+            <b> <a class="btn-outline-danger" href="/delete/<%= student.Student_ID %>">Delete</a></b>
+          </td>
+        </tr>
+      <% } %>
+    </tbody>
+  </table>
+
+<%- include("_footer") -%>
