@@ -30,4 +30,4 @@ npm start
 ## Links
 
 * [GitHub](https://github.com/wiut00011002/11002)
-* [Glitch](https://whimsical-piquant-throne.glitch.me)
+* [Glitch](https://tasty-sun-jersey.glitch.me)
